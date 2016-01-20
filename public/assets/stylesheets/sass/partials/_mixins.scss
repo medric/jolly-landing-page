@@ -1,0 +1,15 @@
+/**
+    Customs mixins go here
+*/
+
+@mixin push-compute($index, $total-columns) {
+    @include pre((($total-columns - $index) / 2) of $total-columns);
+    @include post((($total-columns - $index) / 2) of $total-columns);
+    @include span($index of $total-columns);
+}
+
+@mixin background-image($image) {
+	background: url($image);
+	background-repeat: no-repeat;
+	background-size: cover; 
+}

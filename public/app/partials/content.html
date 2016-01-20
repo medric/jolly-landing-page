@@ -1,0 +1,70 @@
+<section class="jo-content">
+    <div id="jo-content-response" ng-show="vm.form.response">
+        <span id="jo-response">{{ vm.form.response }}.</span>
+        <span id="jo-i-close" ng-click="vm.close('response')"><i class="fa fa-times"></i></span>
+    </div>
+    <div class="jo-content__pre">
+        <img src="/dist/images/jolly-app-logo.png" alt="Jolly"/>
+        <div class="jo-content__pre-inner">
+            <div class="jo-content__pre-inner__head">
+                <h1>{{ 'app.slogan' | translate }}</h1>
+                <span>{{ 'app.baseline' | translate }}</span>
+            </div>
+            <div class="jo-content__pre-inner__subscribe">
+                <form autocomplete="off" name="form" method="POST" ng-submit="vm.submit()" novalidate>
+                    <input type="email" name="email" ng-model="vm.form.options.payload.email" placeholder="{{ 'alert.email.empty' | translate }}" required>
+                    <button type="submit" value="">{{ 'content.btn_subscribe' | translate }}</button>
+                    <div class="jo-content__pre__subscribe__alert" ng-show="form.$submitted || form.email.$touched">
+                        <span ng-show="form.email.$error.required">{{ 'alert.email.empty' | translate }}</span>
+                        <span ng-show="form.email.$error.email">{{ 'alert.email.invalid' | translate }}</span>
+                    </div>
+                </form>
+            </div>
+            <div class="jo-content__pre-inner__next">
+                <img src="/dist/images/arrow-down.png" ng-click="vm.goTo('main')" alt="Découvrir">
+            </div>
+        </div>
+    </div>
+    <div class="jo-content__main">
+        <span id="jo-anchor-intro"></span>
+        <!-- <div class="jo-content__intro">
+            <h2>{{ 'content.content_titles.intro' | translate }}</h2>
+        </div> -->
+        <div class="jo-content__presentation">
+            <!-- <div class="jo-content__presentation--card">
+                <div class="jo-content__presentation--card__note">
+                    <p>{{ 'content.how_to_1' | translate }}</p>
+                </div>
+            </div>
+            <div class="jo-content__presentation--card">
+                <div class="jo-content__presentation--card__note">
+                    <p>{{ 'content.how_to_2' | translate }}</p>
+                </div>
+            </div>
+            <div class="jo-content__presentation--card">
+                <div class="jo-content__presentation--card__note">
+                    <p>{{ 'content.how_to_3' | translate }}</p>
+                </div>
+            </div> -->
+            <div class="jo-content__presentation--card">
+                <div class="jo-content__presentation--card__note">
+                  <i class="fa fa-play-circle-o"></i>
+                  <span>{{ 'content.content_titles.video' | translate }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jo-content__concept">
+        <h2>{{ 'content.content_titles.concept' | translate }}</h2>
+        <div class="jo-content__concept__block-quote">
+            <p>{{ 'content.concept' | translate }}</p>
+        </div>
+        <div class="jo-content__concept__out">
+            <h3>{{ 'content.intro' | translate }}</h3>
+            <span>
+                <i class="fa fa-android fa-2x"></i>
+                <i class="fa fa-apple fa-2x"></i>
+            </span>
+        </div>
+    </div>
+</section>

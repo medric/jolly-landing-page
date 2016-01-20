@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="JollyApp" id="ng-app">
+    <head>
+        <title>Jolly App - Trouve des apéros près de chez toi</title>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="La nouvelle application pour élargir ton cercle d'amis !">
+        <meta name="keywords" content="web,app,design,landing,page,apero,jolly,apéro,amis,groupe,ami,cercle,groupe d'amis, cercle d'amis,soirées,soirée">
+        <meta name="language" content="fr">
+        <link rel="icon" type="image/png" href="dist/images/jolly-app-logo.png>" 
+        <meta name="author" content="Medric, mlazzje">
+        <meta name="robots" content="index, follow">
+        <meta name="google" content="notranslate">
+
+        <!-- Style -->
+        <link media="all" rel="stylesheet" type="text/css" href="vendor/font-awesome-4.3.0/css/font-awesome.min.css">
+        <link media="all" rel="stylesheet" type="text/css" href="dist/css/main.css">
+
+        <base href="/">
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="old-IE">Votre navigateur est obsolète, cliquez <a href="http://browsehappy.com/" target="_blank">ici</a> pour le mettre à jour</p>
+        <![endif]-->
+        <div ng-view></div>
+    </body>
+    <!-- Libs -->
+    <script src="vendor/components/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/components/velocity/velocity.min.js"></script>
+    <script src="vendor/components/angular/angular.min.js"></script>
+    <script src="vendor/components/angular-route/angular-route.min.js"></script>
+    <script src="vendor/components/angular-resource/angular-resource.min.js"></script>
+    <script src="vendor/components/angular-translate/angular-translate.min.js"></script>
+    <script src="vendor/components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+
+    <!-- App -->
+    <script src="dist/js/jolly.min.js"></script>
+</html>

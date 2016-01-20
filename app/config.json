@@ -1,0 +1,50 @@
+{
+    "local": {
+        "node" : {
+            "port": 8080
+        },
+        "sequelize" : {
+            "username"  : "jolly",
+            "password"  : "jolly",
+            "database"  : "jolly",
+            "host"      : "127.0.0.1",
+            "dialect"   : "mysql",
+            "port"      : 3306
+        },
+        "redis": {
+            "host": "127.0.0.1",
+            "port": "6379"
+        },
+        "secure" : {
+            "/app/subscribe": {
+                "quota" : 3,
+                "time": 3600,
+                "ban": 86400
+            }
+        }
+    },
+    "production": {
+        "node" : {
+            "port": 8080
+        },
+        "sequelize" : {
+            "username"  : "jolly",
+            "password"  : "courgette69.",
+            "database"  : "jolly",
+            "host"      : "172.17.42.1",
+            "dialect"   : "mysql",
+            "port"      : 3306
+        },
+        "redis": {
+            "host": "127.0.0.1",
+            "port": "6379"
+        },
+        "secure" : {
+            "/app/subscribe": {
+                "quota" : 3,
+                "time": 3600,
+                "ban": 86400
+            }
+        }
+    }
+}

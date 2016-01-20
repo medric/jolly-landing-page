@@ -1,0 +1,25 @@
+///*------------------------------------*\
+//    #CORE
+//\*------------------------------------*/
+
+@import "settings/colors";
+@import "settings/defaults";
+@import "settings/responsive";
+
+@import "tools/functions";
+@import "tools/mixins";
+@import "tools/responsive";
+
+@import "generic/normalize";
+@import "generic/box-sizing";
+@import "generic/reset";
+
+@import "base/page";
+@import "base/images";
+@import "base/paragraph";
+@import "base/typography";
+@import "base/colors";
+
+@import "trumps/widths";
+@import "trumps/spacing";
+@import "trumps/helpers";

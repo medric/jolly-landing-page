@@ -1,0 +1,44 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities";
+
+@import "breakpoint";
+@import "susyone";
+@import "susy";
+@import "mixins";
+
+// Configuring Susy Defaults
+$susy: (
+  use-custom: (rem: true)
+);
+
+/*$base-font-size: 16px;
+$base-line-height: 24px;*/
+
+$rhythm-unit: "rem";
+
+@include border-box-sizing;
+
+// variables
+$total-columns: 12;
+$medium-devices: 1200px;
+
+$small-devices-columns: 8;
+
+$font-color: #333;
+$main-color: #BA68C8;
+$grey: #E0E0E0;
+$input-border-color: #E0E0E0;
+$signup-color: #f6f8f9;
+$text-color: #1d1d1d;
+$footer-color: #FFF;
+
+$icon-width: 100px;
+$icon-height: 100px;
+
+// fonts
+@include font-face("Lato", font-files("Lato/Lato-Regular.ttf"));
+@include font-face("LatoLight", font-files("Lato/Lato-Light.ttf"));
+@include font-face("LatoBold", font-files("Lato/Lato-Bold.ttf"));
+@include font-face("OpenSans", font-files("open-sans/OpenSans-Regular.ttf"));
+@include font-face("OpenSansBold", font-files("open-sans/OpenSans-Bold.ttf"));

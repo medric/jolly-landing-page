@@ -1,0 +1,40 @@
+{
+	"app" : {
+		"title" : "Jolly",
+		"slogan" : "Let's be Jolly",
+        "baseline" : "Trouve des apéros près de chez toi.",
+		"credits" : "",
+        "subscribe_success": "Merci, à très vite sur Jolly"
+	},
+	"content" : {
+        "intro" : "Bientôt disponible",
+        "foo" : "Pour un soirée, simple, conviviale",
+        "concept" : "Ce soir tu fais un apéro avec tes potes habituels, l’application JOLLY te propose de rencontrer de nouvelles personnes en mélangeant ton groupe d’amis avec un ou plusieurs autres groupes d’amis autour d’un apéro. Tu t’inscris avec tes potes, vous créez vos différents groupes d’amis, et vous avez le choix entre « faire apéro » et « chercher apéro ». Cela permet de rencontrer et de s’intéresser à de nouvelles personnes dans le cadre d’un apéro, tout en étant à l’aise, en petit comité, et dans un endroit convivial.",
+        "how_to_1" : "Tu t’inscris avec tes amis, vous créez vos différents groupes d’amis, et vous avez le choix entre « faire apéro » et « chercher apéro ».",
+        "how_to_2" : "Les groupes d’amis se composent de 2 à 8 personnes, ce qui permet de former des petits groupes d’amis qui se mélangeront facilement.",
+        "how_to_3" : "Sortez.",
+        "btn_subscribe": "Inscris-toi",
+        "content_titles" : {
+        	"intro" : "",
+        	"idea" : "1",
+        	"groups": "2",
+					"hangouts": "3",
+					"register" : "Rejoins Jolly dès maintenant",
+					"concept": "La nouvelle app pour élargir ton cercle d'amis",
+					"video": "Prochainement"
+        }
+	},
+	"alert" : {
+		"email" : {
+            "empty" : "Indique-nous ton email",
+            "invalid" : "Ceci n'est pas un email"
+        }
+	},
+	"server_error" : {
+        "uq_mail" : "Ce mail est déjà enregistré",
+        "secure_overflow" : "Cette IP a réalisé un nombre trop important de requêtes"
+	},
+	"global" : {
+        "sub_valid" : "Merci, à très vite sur Jolly"
+	}
+}
